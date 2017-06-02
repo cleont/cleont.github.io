@@ -3,17 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Bootstrap Walkthrough</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Monkey Business</title>
 
     <!-- default bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
 
     <!-- try themes from: https://startbootstrap.com/-->
-    <!-- <link rel="stylesheet" type="text/css" href="theme.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="theme2.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="theme3.css"> -->
-    <!--<link rel="stylesheet" type="text/css" href="theme4.css">-->
+    <!-- <link rel="stylesheet" type="text/css" href="02_theme.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="03_theme2.css"> -->
+     <link rel="stylesheet" type="text/css" href="04_theme3.css"> 
+    <!--<link rel="stylesheet" type="text/css" href="05_theme4.css">-->
 
     <!-- font awesome -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
@@ -22,26 +24,13 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
 
     <!--custom css override-->
-    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="06_custom.css">
 
-    <!-- use this style for testing and development purposes -->
-    <style type="text/css">
-        .container {
-            border: 10px dotted green;
-        }
 
-        .row {
-            border: 5px solid orangered;
-        }
-
-        .row [class*=' col-'] {
-            border: 10px dotted purple;
-        }
     </style>
-
 </head>
 
-<body>
+<body class="my-body">
 
 
 
@@ -55,29 +44,38 @@
                 <!-- hamburger button. do not touch! -->
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
                     aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+                         <span class="sr-only">Toggle navigation</span>
+                         <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                  </button>
+               
                 <!-- HOME BUTTON: REPLACE href="#" with your landing page url -->
-                <a class="navbar-brand" href="https://www.google.com">
+                 <a class="navbar-brand" href="01_project.html">
                     <!-- PUT BRAND LOGO / ICON HERE (instead of font-awesome -->
-                    <i class="fa fa-phone"></i>
+    
+                    <img src="monkey.png" style="max-height: 40px; margin-top: -10px">
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <!-- THIS UL HANDLES OUR LINKS -->
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="http://facebook.com">untitleity</a></li>
-                    <li><a href="http://facebook.com">facebook2</a></li>
+                    <li><a class="navbar-brand" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="navbar-brand" href="https://www.facebook.com"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="navbar-brand" href="https://www.facebook.com"><i class="fa fa-instagram"></i></a></li>
+                    <!-- to make more links, make some <li> in here -->
+                </ul>
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">What We Do</a></li>
+                    <li><a href="#">Join Us</a></li>
                     <!-- to make more links, make some <li> in here -->
                 </ul>
             </div>
         </div>
     </nav>
 
-
+   
 
     <!--main container for entire page-->
     <div class="container" style="margin-top: 50px">
@@ -93,7 +91,7 @@
                             col-lg-12">
 
                 <div class="jumbotron my-jumbotron-background">
-                    <h1>Hello, world!</h1>
+                    <h1>Get Funky With Our Monkeys</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates repudiandae aspernatur maiores illum
                         repellat laudantium tenetur, eos quidem alias consequatur numquam sunt magni laborum, nulla aliquam
                         blanditiis, nostrum provident reiciendis</p>
@@ -115,12 +113,11 @@
                             col-md-4
                             col-lg-4">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/350x150" alt="...">
+                    <img src="monk-thumb1.jpg" alt="...">
                     <div class="caption">
-                        <h3>Thumbnail label</h3>
+                        <h3>Macaque Manny</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi omnis consectetur officii</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default"
-                                role="button">Button</a></p>
+                        <p><a href="#" class="btn btn-primary" role="button">Meet</a>
                     </div>
                 </div>
             </div>
@@ -133,11 +130,11 @@
                             col-md-4
                             col-lg-4">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/350x150" alt="...">
+                    <img src="monk-thumb2.jpg" alt="...">
                     <div class="caption">
-                        <h3>Thumbnail label</h3>
+                        <h3>Gorilla Grace</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus sit magni</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Button</a> </p>
+                        <p><a href="#" class="btn btn-primary" role="button">Meet</a> </p>
                     </div>
                 </div>
             </div>
@@ -150,12 +147,11 @@
                             col-md-4
                             col-lg-4">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/350x150" alt="...">
+                    <img src="monk-thumb3.jpg" alt="...">
                     <div class="caption">
-                        <h3>Thumbnail label</h3>
+                        <h3>Barbara</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error consequatur eiu.</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default"
-                                role="button">Button</a></p>
+                        <p><a href="#" class="btn btn-primary" role="button">Meet</a>
                     </div>
                 </div>
             </div>
@@ -175,7 +171,7 @@
 
                 <!-- 16:9 aspect ratio -->
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/77273Fhle9w?autoplay=0&loop=1&playlist=77273Fhle9w&start=50&end=99"></iframe>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gklXF8iEWZ0?autoplay=0&loop=1&playlist=77273Fhle9w&start=130&end=240"></iframe>
                 </div>
             </div>
         </div>
@@ -202,15 +198,15 @@
 
 
                         <form action="https://coderinyou-1332.appspot.com/submit/" method="POST">
-                            <legend>FORM TITLE</legend>
+                            <legend>Contact Us!</legend>
                             <div class="form-group">
-                                <label for="username-id">NAME</label>
-                                <input id="username-id" class="form-control" type="text" name="USERNAME" placeholder="your name hers">
+                                <label for="username-id">Name</label>
+                                <input id="username-id" class="form-control" type="text" name="USERNAME" placeholder="Your Name Here">
                             </div>
 
                             <div class="form-group">
                                 <label for="email-id">Email</label>
-                                <input id="email-id" class="form-control" type="email" name="email" placeholder="your email hers">
+                                <input id="email-id" class="form-control" type="email" name="email" placeholder="Your Email Here">
                             </div>
 
                             <label> GENDER</label>
@@ -221,7 +217,7 @@
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="gender" value="female"> female
+                                    <input type="radio" name="gender" value="female"> Female
                                 </label>
                             </div>
 
@@ -246,9 +242,21 @@
                         col-lg-6">
 
 
-                <div class="panel panel-danger">
+                <div class="panel panel-warning">
                     <div class="panel-body">
 
+                      <h1 class="text-primary"> Meet your perfect monkey match!</h1>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                      Ipsam odio possimus tempore animi nam, cupiditate. 
+                      Facilis itaque aut nulla delectus reiciendis aliquam 
+                      voluptates tempora in repellat eum incidunt, facere expedita. 
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                      Ipsam odio possimus tempore animi nam, cupiditate. 
+                      Facilis itaque aut nulla delectus reiciendis aliquam 
+                      voluptates tempora in repellat eum incidunt, facere expedita.   
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                      Ipsam odio possimus tempore animi nam, cupiditate. 
+                         
                     </div>
                 </div>
 
@@ -262,8 +270,66 @@
 
         <!--end of row4-->
 
-        <!--row5: contact info-->
+        <!--row5: carousel-->
+        
         <div class="row">
+            <div class="col-xs-12
+                        col-sm-12
+                        col-md-12
+                        col-lg-12">
+
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                    <img src="monk-c3.jpg" alt="...">
+                    <div class="carousel-caption">
+                        Meet the Monkey of Your Dreams
+                    </div>
+                    </div>
+                    <div class="item">
+                    <img src="monk-c2.jpg" alt="...">
+                    <div class="carousel-caption">
+                        Many Monkeys to Meet
+                    </div>
+                    </div>
+                    <div class="item">
+                    <img src="monk-c4.jpg" alt="...">
+                    <div class="carousel-caption">
+                        Monkeys in the Wild
+                    </div>
+                    </div>
+                
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                </div>
+
+                </div>
+
+                </div>
+        
+        
+       
+        <!--end of row5-->
+
+        <!--row6: contact form-->
+         <div class="row">
             <!--col1-->
             <div class="col-xs-12
                         col-sm-4
@@ -318,12 +384,12 @@
 
                 <div class="list-group">
                     <a href="#" class="list-group-item disabled">
-                    Cras justo odio
+                   
                 </a>
-                    <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-                    <a href="#" class="list-group-item">Morbi leo risus</a>
-                    <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-                    <a href="#" class="list-group-item">Vestibulum at eros</a>
+                    <a href="#" class="list-group-item">Terms & Conditions</a>
+                    <a href="#" class="list-group-item">Privacy Policy</a>
+                    <a href="#" class="list-group-item">Banana Policy</a>
+                    <a href="#" class="list-group-item">Monkey Business Opportunities</a>
                 </div>
 
             </div>
@@ -331,33 +397,17 @@
 
 
         </div>
-        <!--end of row5-->
+
+                        <!--end of row6-->
+
+        <!--row 7: -->
+
+        
+        <!--end of row 7-->
 
 
     </div>
     <!--end of container-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <!-- jquery -->
@@ -371,6 +421,10 @@
     <script>
         new WOW().init();
     </script>
+
+    <!--custom js-->
+    <script src="custom.js"></script>
+
 </body>
 
 </html>

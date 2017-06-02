@@ -1,0 +1,22 @@
+.my-jumbotron-background  {
+
+background-image:url('skymonk.gif');
+background-size: cover;
+background-position: centre; 
+text-align: center;
+
+
+}
+
+.my-body{
+
+background-image: url('pattern.png');
+background-size: 20%;
+background-repeat;
+
+
+}
+
+.table{
+    color: black;
+}
